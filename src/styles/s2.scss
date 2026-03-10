@@ -52,7 +52,28 @@
   padding-right: 7px;
   padding-left: 7px;
   display: inline-block;
-  }
+  } 
+
+   &__back h3{
+  color: $fifth-color;
+  padding-right: 7px;
+  padding-left: 7px;
+  font-size: 28px;
+  } 
+
+  
+   &__back .lienpj{
+  color: $sec-color;
+  padding-right: 7px;
+  padding-left: 7px;
+  display: inline-block;
+  font-size: 28px;
+  } 
+
+    &__back .lienpj:hover{
+
+    transform: scale(1.2);
+    }
   
 
   &__back p a:hover{

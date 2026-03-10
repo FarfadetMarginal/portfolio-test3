@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import data from '../data/projects.json';
+import '../styles/projects.scss'
+import Footer from '../components/Footer.tsx'
 
 type Project ={
     id: number;
@@ -49,8 +51,11 @@ const Projects = () => {
                     <p>Aucun projet ne correspond à votre recherche.</p>
                 )}
             </div>
+            <a className="retourpj" href="/">Retour au menu</a>
+            <Footer/>
         </section>
     );
 };
+
 
 export default Projects;
