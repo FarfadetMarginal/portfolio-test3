@@ -1,1 +1,35 @@
 @import './global.scss';
+
+*{
+
+    margin: 0;
+
+}
+
+body {
+    justify-content: space-evenly;
+}
+
+header {
+    max-width: 1980px;
+    justify-content: space-evenly;
+}
+
+#s1, #s2{
+    display: flex;
+}
+
+h1{
+    color: $fourth-color;
+    padding: 20px;
+}
+
+
+footer {
+    max-width: 1980px;
+    color:$fourth-color;
+    padding: 20px;
+    justify-self: center;
+}
+
+
