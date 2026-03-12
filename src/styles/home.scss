@@ -35,3 +35,9 @@ footer {
 }
 
 
+@media screen and (max-width :1024px) {
+#s1, #s2, #s3{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+}
