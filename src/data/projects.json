@@ -27,6 +27,13 @@
         "description":"C'est un premier test de portfolio avec un style fait à l'aide d'IA mais remixé bref",
         "image":"/img/Gemini_Generated_Image_kmrz1bkmrz1bkmrz.png",
         "link":"https://farfadetmarginal.github.io/portfolio-test1/"
+    },
+    {
+        "id":5,
+        "title":"Site météo",
+        "description":"Projet de site météo réalisé en 1 journée en JavaScript, qui gère les API et LocalStorage, bon c pas très utile vu que c'est la méteo du jour uniquement",
+        "image":"/img/Morphéo.png",
+        "link":"https://site-meteo-99htmn3p8-farfadetmarginals-projects.vercel.app"
     }
 
 ]

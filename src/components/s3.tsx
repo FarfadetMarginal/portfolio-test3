@@ -3,7 +3,6 @@ import '../styles/s3.scss';
 
 
 
-
 const s3 = () => {
   const [flipped, setFlipped] = useState(false);
 
@@ -23,5 +22,4 @@ const s3 = () => {
     </div>
   );
 };
-
 export default s3;
