@@ -13,11 +13,11 @@ const s3 = () => {
         <div className="flip-card__front">
             <div className="flip-card__overlay">Skills</div>
           <p>frontend - <span>backend</span> - HTML - <span>CSS</span> - JavaScript - 
-            <span>Python</span> - PHP - <span>CMS Wordpress</span> - React - 
+            <span>Python</span> - PHP - <span>CMS Wordpress</span> - React - <span>Node.js</span> - Typescript
           </p>
         </div>
         <div className="flip-card__back">
-          <img src="public/img/c4703cd21ec7e4f43455190c78f29cff.jpg" alt="image derrière" />
+          <img src="/img/c4703cd21ec7e4f43455190c78f29cff.jpg" alt="image derrière" />
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
         "id":1,
         "title":"réveil du metaverse",
         "description":"c'est l'intégration d'un site de plusieurs pages à partir d'un figma, en html et css uniquement dans le cadre d'une formation.",
-        "image":"public/img/af72556ef0db51a0818c6b7dd441127632dc705e.png",
+        "image":"/img/af72556ef0db51a0818c6b7dd441127632dc705e.png",
         "link":"https://farfadetmarginal.github.io/exofigma4/"
         
     },
@@ -11,21 +11,21 @@
         "id":2,
         "title":"pokedex",
         "description":"c un pokedex en python tkiner etc",
-        "image":"public/img/Shaymin.png",
+        "image":"/img/Shaymin.png",
         "link":"https://github.com/FarfadetMarginal/pokedex-py"
     },
     {
         "id":3,
         "title":"Blog PHP",
         "description":"C'est un blog fonctionnel réalisé en PHP, donc avec un focus sur le back (en gros c'est moche mais c'est pas le sujet)",
-        "image":"public/img/pngwing.com7.png",
+        "image":"/img/pngwing.com7.png",
         "link":"https://github.com/FarfadetMarginal/Blog-PHP"
     },
     {
         "id":4,
         "title":"Portfolio v1",
         "description":"C'est un premier test de portfolio avec un style fait à l'aide d'IA mais remixé bref",
-        "image":"public/img/Gemini_Generated_Image_kmrz1bkmrz1bkmrz.png",
+        "image":"/img/Gemini_Generated_Image_kmrz1bkmrz1bkmrz.png",
         "link":"https://farfadetmarginal.github.io/portfolio-test1/"
     }
 

@@ -18,7 +18,7 @@ const s1 = () => {
             Bien que basé en France je suis ouvert à toutes sortes d'opportunités. Je suis fluent en anglais, et j'ai d'autres compétences utiles au design (photographie, Lightroom, photoshop, canva, etc).</p>
         </div>
         <div className="flip-card__back">
-          <img src="public/img/d4cd9a390199d77a61236e9473bfcc24.jpg" alt="image derrière" />
+          <img src="/img/d4cd9a390199d77a61236e9473bfcc24.jpg" alt="image derrière" />
         </div>
       </div>
     </div>

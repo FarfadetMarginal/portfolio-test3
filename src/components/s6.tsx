@@ -12,7 +12,7 @@ const s6 = () => {
         <div className={`flip-card__inner ${flipped ? 'is-flipped' : ''}`}>
             <div className="flip-card__front">
                 <div className="flip-card__overlay">Contact</div>
-            <img src="public/img/boblepyvgbh.jpg" alt="image derrière" />
+            <img src="/img/boblepyvgbh.jpg" alt="image derrière" />
              </div>
         <div className="flip-card__back">
                 <p>Envoie moi un mail   <a href="mailto:bapt935@gmail.com">ici</a></p>

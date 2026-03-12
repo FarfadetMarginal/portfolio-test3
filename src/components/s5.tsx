@@ -27,7 +27,7 @@ const s5 = () => {
             Ecole de Conde, Nice</p>
         </div>
         <div className="flip-card__back">
-          <img src="public/img/a61d015fc61c124bc1df5d94325982a7.jpg" alt="image derrière" />
+          <img src="/img/a61d015fc61c124bc1df5d94325982a7.jpg" alt="image derrière" />
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ const s2 = () => {
         <div className={`flip-card__inner ${flipped ? 'is-flipped' : ''}`}>
             <div className="flip-card__front">
                 <div className="flip-card__overlay">Liens</div>
-            <img src="public/img/d0968d1025bacc060d652cc43ecdce9a.jpg" alt="image derrière" />
+            <img src="/img/d0968d1025bacc060d652cc43ecdce9a.jpg" alt="image derrière" />
              </div>
         <div className="flip-card__back">
                 <p>Liens utiles : <a href="https://github.com/FarfadetMarginal">GitHub</a>
