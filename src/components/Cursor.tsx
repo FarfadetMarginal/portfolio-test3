@@ -19,34 +19,28 @@ const Cursor = () => {
     const removeHover = () => cursorRef.current?.classList.remove('cursor--hover');
     const addTourne = () => cursorRef.current?.classList.add('cursor--tourne');
     const removeTourne = () => cursorRef.current?.classList.remove('cursor--tourne');
+  const handleEnter = (e: MouseEvent) => {
+    const target = e.target as Element;
+    if (target.closest('a, button, .flip-card')) addHover();
+    if (target.closest('h1, footer')) addTourne();
+  };
 
-    const clickables = document.querySelectorAll('a, button, .flip-card');
-    const titrequifaittourner = document.querySelectorAll('h1, footer');
+  const handleLeave = (e: MouseEvent) => {
+    const target = e.target as Element;
+    if (target.closest('a, button, .flip-card')) removeHover();
+    if (target.closest('h1, footer')) removeTourne();
+  };
 
-    clickables.forEach(el => {
-      el.addEventListener('mouseenter', addHover);
-      el.addEventListener('mouseleave', removeHover);
-    });
+  window.addEventListener('mousemove', move);
+  document.addEventListener('mouseover', handleEnter);
+  document.addEventListener('mouseout', handleLeave);
 
-    titrequifaittourner.forEach(el => {
-      el.addEventListener('mouseenter', addTourne);
-      el.addEventListener('mouseleave', removeTourne);
-    });
-
-    window.addEventListener('mousemove', move);
-
-    return () => {
-      window.removeEventListener('mousemove', move);
-      clickables.forEach(el => {
-        el.removeEventListener('mouseenter', addHover);
-        el.removeEventListener('mouseleave', removeHover);
-      });
-       titrequifaittourner.forEach(el => {
-      el.removeEventListener('mouseenter', addTourne);
-      el.removeEventListener('mouseleave', removeTourne);
-    });
-    };
-  }, []);
+  return () => {
+    window.removeEventListener('mousemove', move);
+    document.removeEventListener('mouseover', handleEnter);
+    document.removeEventListener('mouseout', handleLeave);
+  };
+}, []);
 
   return (
     <div ref={cursorRef} className="cursor">
