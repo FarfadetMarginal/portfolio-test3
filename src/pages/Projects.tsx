@@ -3,6 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import data from '../data/projects.json';
 import '../styles/projects.scss'
 import Footer from '../components/Footer.tsx'
+import Cursor from '../components/Cursor.tsx'
 
 type Project ={
     id: number;
@@ -26,9 +27,10 @@ const Projects = () => {
     );
 
     return(
+        
         <section>
             <h2>Mes projets</h2>
-
+            <Cursor />
             <input
                 type="text"
                 placeholder="Rechercher un projet..."

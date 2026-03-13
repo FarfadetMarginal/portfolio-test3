@@ -6,3 +6,30 @@ body{
     padding: 0;
     background-color:$sec-color;
 }
+
+
+* {
+  cursor: none;
+}
+
+.cursor {
+  pointer-events: none;
+  z-index: 9999;
+
+  &__icon {
+    position: fixed;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    color: $third-color;
+    font-size: 30px;
+    transition: all 0.1s ease;
+  }
+
+
+  &--hover &__icon {
+    color: $fifth-color;
+    font-size: 45px;
+    transform: translate(-50%, -50%) rotate(65deg); 
+  }
+
+}

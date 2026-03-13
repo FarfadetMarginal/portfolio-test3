@@ -6,10 +6,12 @@ import S4 from '../components/s4.tsx'
 import S5 from '../components/s5.tsx'
 import S6 from '../components/s6.tsx'
 import '../styles/home.scss'
+import Cursor from '../components/Cursor.tsx'
 
 const Home = () => {
     return (
         <>
+        <Cursor />
         <header>
             <h1>Baptiste et son Portfolio...</h1>
         

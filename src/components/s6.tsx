@@ -15,7 +15,7 @@ const s6 = () => {
             <img src="/img/boblepyvgbh.jpg" alt="image derrière" />
              </div>
         <div className="flip-card__back">
-                <p>Envoie moi un mail   <a href="mailto:bapt935@gmail.com">ici</a></p>
+                <p>Envoie moi un mail   <a href="mailto:bapt935@gmail.com">ICI</a></p>
         </div>
     </div>
 </div>
