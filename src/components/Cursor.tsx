@@ -19,7 +19,9 @@ const Cursor = () => {
     const removeHover = () => cursorRef.current?.classList.remove('cursor--hover');
     const addTourne = () => cursorRef.current?.classList.add('cursor--tourne');
     const removeTourne = () => cursorRef.current?.classList.remove('cursor--tourne');
-  const handleEnter = (e: MouseEvent) => {
+    
+    // donc la pourquoi on se fait chier à faire ça, c pque sinon vu que les project cards sont générées dynamiquement, ils sont pas pris dans un queryselector, donc on doit rendre ça dynamique aussi en gros
+    const handleEnter = (e: MouseEvent) => {
     const target = e.target as Element;
     if (target.closest('a, button, .flip-card')) addHover();
     if (target.closest('h1, footer')) addTourne();
