@@ -17,11 +17,20 @@ const Cursor = () => {
 
     const addHover = () => cursorRef.current?.classList.add('cursor--hover');
     const removeHover = () => cursorRef.current?.classList.remove('cursor--hover');
+    const addTourne = () => cursorRef.current?.classList.add('cursor--tourne');
+    const removeTourne = () => cursorRef.current?.classList.remove('cursor--tourne');
 
     const clickables = document.querySelectorAll('a, button, .flip-card');
+    const titrequifaittourner = document.querySelectorAll('h1, footer');
+
     clickables.forEach(el => {
       el.addEventListener('mouseenter', addHover);
       el.addEventListener('mouseleave', removeHover);
+    });
+
+    titrequifaittourner.forEach(el => {
+      el.addEventListener('mouseenter', addTourne);
+      el.addEventListener('mouseleave', removeTourne);
     });
 
     window.addEventListener('mousemove', move);
@@ -32,6 +41,10 @@ const Cursor = () => {
         el.removeEventListener('mouseenter', addHover);
         el.removeEventListener('mouseleave', removeHover);
       });
+       titrequifaittourner.forEach(el => {
+      el.removeEventListener('mouseenter', addTourne);
+      el.removeEventListener('mouseleave', removeTourne);
+    });
     };
   }, []);
 
