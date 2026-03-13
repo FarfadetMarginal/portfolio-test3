@@ -7,11 +7,13 @@ import S5 from '../components/s5.tsx'
 import S6 from '../components/s6.tsx'
 import '../styles/home.scss'
 import Cursor from '../components/Cursor.tsx'
+import Truc from '../components/Truc.tsx'
 
 const Home = () => {
     return (
         <>
         <Cursor />
+        <Truc />
         <header>
             <h1>Baptiste et son Portfolio...</h1>
         
