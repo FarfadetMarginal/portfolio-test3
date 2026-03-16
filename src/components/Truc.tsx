@@ -14,11 +14,21 @@ useEffect(() => {
     let osX = getRandomInt(window.innerWidth - 40);
     let osY = getRandomInt(window.innerHeight - 40);
     let score = 0;
+    const goldenX = getRandomInt(window.innerWidth - 40);
+    const goldenY = getRandomInt(window.innerHeight - 40);
 
     if (os.current) {
         os.current.style.left = `${osX}px`;
         os.current.style.top = `${osY}px`;
+        
+        if (osX == goldenX && osY == goldenY) {
+            alert("Vous avez gagné l'os d'or!!! Félicitation!!! Vous remportez votre poids en croquette !!! Contactez l'auteur du site pour recevoir votre prix");
+            os.current.style.color = 'silver';
+        } else {
+        os.current.style.color = '';
+        }
     }
+
 
 
     const curseurBon = (e: MouseEvent) => {
@@ -29,6 +39,20 @@ useEffect(() => {
         score = score+1;
 
         console.log(score);
+
+        
+    if (os.current) {
+        os.current.style.left = `${osX}px`;
+        os.current.style.top = `${osY}px`;
+        
+        if (osX == goldenX && osY == goldenY) {
+            alert("Vous avez gagné l'os d'or!!! Félicitation!!! Vous remportez votre poids en croquette !!! Contactez l'auteur du site pour recevoir votre prix");
+            os.current.style.color = 'gold';
+        } else {
+        os.current.style.color = '';
+        }
+    }
+
 
         if (score == 10) {
             alert("bon toutou");
@@ -74,10 +98,6 @@ useEffect(() => {
             alert("succès déverouillé - COAT (chômeur of all time) veuillez contacter l'auteur du site pour une récompense");
         }
 
-        if (os.current) {
-            os.current.style.left = `${osX}px`;
-            os.current.style.top = `${osY}px`;
-        }
     };
   };
 
