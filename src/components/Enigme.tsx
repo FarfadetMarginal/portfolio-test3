@@ -1,11 +1,27 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 const Enigme = () => {
+
+    const [won, setWon] = useState(false);
 
     const mer = useRef<HTMLDivElement>(null);
     const ve = useRef<HTMLDivElement>(null);
     const yeux = useRef<HTMLDivElement>(null);
     const myst = useRef<HTMLDivElement>(null);
+    const input1 = useRef<HTMLInputElement>(null);
+    // const h1 = document.querySelector('h1')
+
+    const handleSubmit = () => {
+        if (input1.current?.value == "merveilleux") {
+            console.log("won");
+            setWon(true);
+            alert("Envoi -urluberlu- au 06 52 61 79 xx pour une récompense digne de ce nom...");
+
+
+        } else {
+            console.log("loserrrrrrrrrr");
+        }
+    };
 
     useEffect(() => {
 
@@ -63,9 +79,11 @@ const Enigme = () => {
                 ve.current.style.display = 'none';
             }
             if (myst.current) {
-                myst.current.style.display = 'block';
+                myst.current.style.display = 'flex';
             }
         };
+
+
 
         mer.current?.addEventListener('mouseenter', handleMer);
         ve.current?.addEventListener('mouseenter', handleVe);
@@ -81,6 +99,7 @@ const Enigme = () => {
 
     return (
         <>
+            <div className={won ? 'enigme__bg won' : 'enigme__bg'} style={{ position: 'fixed', inset: 0, zIndex: -1 }} />
             <div ref={mer} className="enigme__icon" style={{ position: 'fixed', fontSize:'60px', color: '#F7BB00'}}>
                 <i className="fa-solid fa-umbrella-beach"></i><i className="fa-solid fa-water"></i>
             </div>
@@ -93,8 +112,8 @@ const Enigme = () => {
                 <i className="fa-solid fa-eye"></i><i className="fa-solid fa-eye"></i>
             </div>
             <div ref={myst} className="myst" style={{ position: 'fixed', display: 'none'}}>
-                <input type="text" />
-                <button type="submit" className="boutonsub"></button>
+                <input ref={input1} type="text" className="inputmyst" />
+                <button onClick={handleSubmit} type="submit" className="boutonsub"> ??????? </button>
             </div>
         </>
     );

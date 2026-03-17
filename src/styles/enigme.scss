@@ -1,0 +1,39 @@
+@import './global.scss';
+
+.myst{
+    justify-self: center;
+    margin-top: 80px;
+    display: flex;
+    margin-right: 22px;
+    gap: 10px;
+   
+}
+
+.boutonsub{
+    background-color: $primary-color;
+    color: $third-color;
+    border-radius: 22px;
+}
+
+.inputmyst{
+    padding: 10px;
+    border-radius: 22px;
+}
+
+@keyframes rainbow {
+  0%   { background-color: #ff0000; }
+  20%  { background-color: #ff8800; }
+  40%  { background-color: #ffff00; }
+  60%  { background-color: #00cc00; }
+  80%  { background-color: #0000ff; }
+  100% { background-color: #ff0000; }
+}
+
+.enigme__bg {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+
+  &.won {
+    animation: rainbow 1s linear infinite; // ← tourne en boucle
+  }
+}
