@@ -94,7 +94,7 @@ const Enigme = () => {
             </div>
             <div ref={myst} className="myst" style={{ position: 'fixed', display: 'none'}}>
                 <input type="text" />
-                <button type="submit"></button>
+                <button type="submit" className="boutonsub"></button>
             </div>
         </>
     );
