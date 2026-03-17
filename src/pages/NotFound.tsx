@@ -1,5 +1,5 @@
 import Cursor from '../components/Cursor.tsx'
-import Enigme from '../components/enigme.tsx'
+import Enigme from '../components/Enigme.tsx'
 
 const NotFound = () => {
 	return (
