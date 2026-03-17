@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 
-const Enigme = () => {
+const Enigme = ({ onWin }: { onWin: () => void }) => {
 
     const [won, setWon] = useState(false);
 
@@ -9,17 +9,19 @@ const Enigme = () => {
     const yeux = useRef<HTMLDivElement>(null);
     const myst = useRef<HTMLDivElement>(null);
     const input1 = useRef<HTMLInputElement>(null);
-    // const h1 = document.querySelector('h1')
+
 
     const handleSubmit = () => {
         if (input1.current?.value == "merveilleux") {
             console.log("won");
             setWon(true);
-            alert("Envoi -urluberlu- au 06 52 61 79 xx pour une récompense digne de ce nom...");
-
+            onWin();
 
         } else {
             console.log("loserrrrrrrrrr");
+            if (input1.current) {
+                input1.current.value = "";
+}
         }
     };
 
