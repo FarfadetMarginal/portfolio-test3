@@ -45,7 +45,7 @@
     {
         "id":7,
         "title":"Calculateur d'intérêts",
-        "description":"Encore du React, cette fois c'est un calculateur d'intérêt lros d'un prêt à la banque, un outil qui peut servir mais qui a été fait principalement pour s'entraîner",
+        "description":"Encore du React, cette fois c'est un calculateur d'intérêt lors d'un prêt à la banque, un outil qui peut servir mais qui a été fait principalement pour s'entraîner",
         "image":"/img/Capture d'écran 2026-03-23 162610.png",
         "link":"https://loan-calculer.vercel.app"
     },
