@@ -3,7 +3,7 @@
         "id":1,
         "title":"réveil du metaverse",
         "description":"c'est l'intégration d'un site de plusieurs pages à partir d'un figma, en html et css uniquement dans le cadre d'une formation.",
-        "image":"/img/af72556ef0db51a0818c6b7dd441127632dc705e.png",
+        "image":"/img/Capture d'écran 2026-03-23 161415.png",
         "link":"https://farfadetmarginal.github.io/exofigma4/"
         
     },
@@ -11,14 +11,14 @@
         "id":2,
         "title":"pokedex",
         "description":"c un pokedex en python tkiner etc",
-        "image":"/img/Shaymin.png",
+        "image":"/img/Capture d'écran 2026-03-23 160855.png",
         "link":"https://github.com/FarfadetMarginal/pokedex-py"
     },
     {
         "id":3,
         "title":"Blog PHP",
         "description":"C'est un blog fonctionnel réalisé en PHP, donc avec un focus sur le back (en gros c'est moche mais c'est pas le sujet)",
-        "image":"/img/pngwing.com7.png",
+        "image":"/img/Capture d'écran 2026-03-23 162045.png",
         "link":"https://github.com/FarfadetMarginal/Blog-PHP"
     },
     {
@@ -32,7 +32,7 @@
         "id":5,
         "title":"Site météo",
         "description":"Projet de site météo réalisé en 1 journée en JavaScript, qui gère les API et LocalStorage, bon c pas très utile vu que c'est la méteo du jour uniquement",
-        "image":"/img/Morphéo.png",
+        "image":"/img/Capture d'écran 2026-03-23 160149.png",
         "link":"https://site-meteo-99htmn3p8-farfadetmarginals-projects.vercel.app"
     },
     {
@@ -41,6 +41,20 @@
         "description":"Pierre feuille ciseaux (lizard spock) vs l'ordinateur, le tout en react. Simple",
         "image":"/img/Capture d'écran 2026-03-23 155218.png",
         "link":"https://rock-paper-scissors-jet-delta.vercel.app"
+    },
+    {
+        "id":7,
+        "title":"Calculateur d'intérêts",
+        "description":"Encore du React, cette fois c'est un calculateur d'intérêt lros d'un prêt à la banque, un outil qui peut servir mais qui a été fait principalement pour s'entraîner",
+        "image":"/img/Capture d'écran 2026-03-23 162610.png",
+        "link":"https://loan-calculer.vercel.app"
+    },
+    {
+        "id":8,
+        "title":"choisir forfaits",
+        "description":"Toujours du React, juste un petit exercice de style principalement qui consiste à utiliser useState pour gérer un système de forfaits différents",
+        "image":"/img/Capture d'écran 2026-03-23 162846.png",
+        "link":"https://mini-projet-forfait.vercel.app"
     }
 
 ]
