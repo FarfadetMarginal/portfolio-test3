@@ -34,6 +34,13 @@
         "description":"Projet de site météo réalisé en 1 journée en JavaScript, qui gère les API et LocalStorage, bon c pas très utile vu que c'est la méteo du jour uniquement",
         "image":"/img/Morphéo.png",
         "link":"https://site-meteo-99htmn3p8-farfadetmarginals-projects.vercel.app"
+    },
+    {
+        "id":6,
+        "title":"Pierre feuille ciseaux",
+        "description":"Pierre feuille ciseaux (lizard spock) vs l'ordinateur, le tout en react. Simple",
+        "image":"/img/Capture d'écran 2026-03-23 155218.png",
+        "link":"https://rock-paper-scissors-jet-delta.vercel.app"
     }
 
 ]
