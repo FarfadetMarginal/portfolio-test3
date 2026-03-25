@@ -117,6 +117,71 @@ const Enigme = ({ onWin }: { onWin: () => void }) => {
                 <input ref={input1} type="text" className="inputmyst" />
                 <button onClick={handleSubmit} type="submit" className="boutonsub"> ??????? </button>
             </div>
+
+            <aside className="container-loader" style={{display: won ? 'block' : 'none'}}>
+                <article className="aro" style={{ '--d': 1 } as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 2 } as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 3 } as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 4 } as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 5 } as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 6 } as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 7 } as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 8 } as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 9 } as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 10} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 11} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 12} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 13} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 14} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 15} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 16} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 17} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 18} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 19} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 20} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 21} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 22} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 23} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 24} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 25} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 26} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 27} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 28} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 29} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 31} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 32} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 33} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 34} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 35} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 36} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 37} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 38} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 39} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 40} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 41} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 42} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 43} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 44} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 45} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 46} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 47} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 48} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 49} as React.CSSProperties}></article>
+                <article className="aro" style={{ '--d': 50} as React.CSSProperties}></article>
+            </aside>
+
+            <div className="loader" style={{display: won ? 'block' : 'none'}}>
+                <div className="cube">
+                    <div className="side front"></div>
+                    <div className="side back"></div>
+                    <div className="side top"></div>
+                    <div className="side bottom"></div>
+                    <div className="side left"></div>
+                    <div className="side right"></div>
+                </div>
+            </div>
+ 
+
         </>
     );
 };

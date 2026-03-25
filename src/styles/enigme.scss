@@ -13,6 +13,8 @@
     background-color: $primary-color;
     color: $third-color;
     border-radius: 22px;
+    outline: none;
+    
 }
 
 .inputmyst{
@@ -35,5 +37,162 @@
 
   &.won {
     animation: rainbow 1s linear infinite; // ← tourne en boucle
+  }
+}
+
+h1{
+    position: sticky;
+    text-align: center;
+}
+
+
+.container-loader {
+  width: 230px;
+  height: 230px;
+  position: relative;
+
+  @media (width <= 1111px) {
+    zoom: 0.55;
+  }
+
+  .aro {
+    width: 100%;
+    height: 100%;
+    border: 7px solid currentColor;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    transition: filter 0.5s ease;
+    animation: mover 2s alternate infinite both;
+    animation-delay: calc(var(--d) * -0.04s);
+
+    &:nth-child(n + 1):nth-child(-n + 5) {
+      color: #ff5733;
+    }
+
+    &:nth-child(n + 6):nth-child(-n + 10) {
+      color: #33ff57;
+    }
+
+    &:nth-child(n + 11):nth-child(-n + 15) {
+      color: #3357ff;
+    }
+
+    &:nth-child(n + 16):nth-child(-n + 20) {
+      color: #9d80cb;
+    }
+
+    &:nth-child(n + 21):nth-child(-n + 25) {
+      color: #33fff5;
+    }
+
+    &:nth-child(n + 26):nth-child(-n + 30) {
+      color: #f5ff33;
+    }
+
+    &:nth-child(n + 31):nth-child(-n + 35) {
+      color: #ff8c33;
+    }
+
+    &:nth-child(n + 36):nth-child(-n + 40) {
+      color: #8c33ff;
+    }
+
+    &:nth-child(n + 41):nth-child(-n + 45) {
+      color: #33ff8c;
+    }
+
+    &:nth-child(n + 46):nth-child(-n + 50) {
+      color: #ff3380;
+    }
+  }
+
+  &:hover {
+    .aro {
+      filter: saturate(500%);
+      color: white;
+    }
+  }
+}
+
+@keyframes mover {
+  0%,
+  100% {
+    left: -150%;
+    top: -150%;
+  }
+  25% {
+    left: 150%;
+  }
+  50% {
+    top: 50%;
+  }
+  75% {
+    left: -150%;
+  }
+}
+
+/* From Uiverse.io by PriyanshuGupta28 */ 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform: scale(5);
+  justify-self: self-end;
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 2s infinite linear;
+}
+
+.side {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  opacity: 0.8;
+}
+
+.front {
+  transform: translateZ(50px);
+  background: linear-gradient(45deg, #ff4e50, #f9d423);
+}
+
+.back {
+  transform: translateZ(-50px);
+  background: linear-gradient(45deg, #40e0d0, #ff8c00);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(50px);
+  background: linear-gradient(45deg, #800080, #00bfff);
+}
+
+.bottom {
+  transform: rotateX(90deg) translateZ(-50px);
+  background: linear-gradient(45deg, #008000, #ffff00);
+}
+
+.left {
+  transform: rotateY(90deg) translateZ(50px);
+  background: linear-gradient(45deg, #0000ff, #ff1493);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(-50px);
+  background: linear-gradient(45deg, #00ffff, #ff0000);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
   }
 }
