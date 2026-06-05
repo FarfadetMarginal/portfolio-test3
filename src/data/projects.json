@@ -62,6 +62,13 @@
         "description":"Premier projet pro, création d'un site de coiffure en JS, simple site vitrine (pas de back, juste infos)",
         "image":"/img/Capture d'écran 2026-04-14 133859.png",
         "link":"https://carole-coiffure.vercel.app"
+    },
+    {
+        "id":10,
+        "title":"Leafeon",
+        "description":"Maquette de site de collectionneur de plante rare réalisé avec Figma.",
+        "image":"/img/Capture d'écran 2026-05-27 122951.png",
+        "link":"https://www.figma.com/design/JoVFNtgOkOHahbqHzs8mdV/eval-figma?node-id=0-1&t=G7rZEHnviHcYZ4mE-1"
     }
 
 ]
