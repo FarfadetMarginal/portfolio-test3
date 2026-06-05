@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 
-const s4 = () => {
+const S4 = () => {
   const [flipped, setFlipped] = useState(false);
 
   return (
@@ -16,11 +16,11 @@ const s4 = () => {
             <img src="/img/snoopygvuhbjk.jpg" alt="image derrière" />
              </div>
         <div className="flip-card__back">
-                <p>Les projets? bah yen a plein, si tu veux tout voir voila un lien <Link to="/projects">Projects</Link></p>
+                <p>Les projets? Il y en a beaucoup, clique ici pour tous les voir <Link to="/projects">Projects</Link></p>
         </div>
     </div>
 </div>
   );
 };
 
-export default s4;
+export default S4;

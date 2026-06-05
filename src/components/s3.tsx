@@ -3,7 +3,7 @@ import '../styles/s3.scss';
 
 
 
-const s3 = () => {
+const S3 = () => {
   const [flipped, setFlipped] = useState(false);
 
   return (
@@ -11,8 +11,7 @@ const s3 = () => {
       <div className={`flip-card__inner ${flipped ? 'is-flipped' : ''}`}>
         <div className="flip-card__front">
             <div className="flip-card__overlay">Skills</div>
-          <p>frontend - <span>backend</span> - HTML - <span>CSS</span> - JavaScript - 
-            <span>Python</span> - PHP - <span>CMS Wordpress</span> - React - <span>Node.js</span> - Typescript
+          <p>HTML - <span>CSS</span> - JavaScript - <span>Python</span> - PHP - <span>CMS Wordpress</span> - React - <span>Node.js</span> - Typescript - <span>Figma</span> - Algorithmique - <span>MySQL</span> - MongoDB - <span>Git et GitHub</span> - Base de données relationnelle - <span>Ergonomie et Accessibilité</span> - Méthode AGILE - <span>OWASP</span> - Gestion projet Trello - <span>Méthode KANBAN</span> - Déploiement d’application + suivi - <span>Eco Conception (Green IT)</span> - Propriété intellectuelle - <span>Concevoir des API ReST</span> - Référencement SEO et GEO - <span>DevOps</span> - RGPD/Mentions légales - <span>Analytics</span>
           </p>
         </div>
         <div className="flip-card__back">
@@ -22,4 +21,4 @@ const s3 = () => {
     </div>
   );
 };
-export default s3;
+export default S3;
