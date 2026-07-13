@@ -69,6 +69,28 @@
         "description":"Maquette de site de collectionneur de plante rare réalisé avec Figma.",
         "image":"/img/Capture d'écran 2026-05-27 122951.png",
         "link":"https://www.figma.com/design/JoVFNtgOkOHahbqHzs8mdV/eval-figma?node-id=0-1&t=G7rZEHnviHcYZ4mE-1"
+    }, 
+    {
+        "id":11,
+        "title":"Event planner",
+        "description":"Site de gestion d'évenements, en PHP / base de données relationelles / PHPMyAdmin ect",
+        "image":"/img/Capture d'écran 2026-06-30 162902.png",
+        "link":"https://github.com/FarfadetMarginal/event-planner"
+    }, 
+    {
+        "id":12,
+        "title":"Event planner",
+        "description":"Gestion de back-end Javascript lors d'un exercice, type site e-commerce",
+        "image":"/img/Capture d'écran 2026-07-13 091530.png",
+        "link":"https://github.com/FarfadetMarginal/eval-js-geniarthub"
+    }, 
+    {
+        "id":13,
+        "title":"Rébus ascii",
+        "description":"Petite énigme / rébus codé vite fait en html/js (à la base c'est une enigme pour ma copine)",
+        "image":"/img/Capture d'écran 2026-07-13 160318.png",
+        "link":"https://pourmastar1.vercel.app"
     }
+    
 
 ]
